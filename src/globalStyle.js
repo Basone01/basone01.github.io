@@ -17,12 +17,17 @@ injectGlobal`
         box-sizing:border-box;
     }
 
+    :root{
+        font-size:20px;
+    }
+
     body{
         background-color:#222;
         font-family:'Pridi', serif;
         color:#ddd;
         height:2000px;
         overflow:auto;
+        font-size:1rem;
     }
 
     
