@@ -12,6 +12,11 @@ injectGlobal`
         src: url(${require('./localFonts/Pridi-SemiBold.ttf')});
         font-weight:bold;
     }
+
+    *{
+        box-sizing:border-box;
+    }
+
     body{
         background-color:#222;
         font-family:'Pridi', serif;
@@ -19,4 +24,7 @@ injectGlobal`
         height:2000px;
         overflow:auto;
     }
+
+    
+
 `
