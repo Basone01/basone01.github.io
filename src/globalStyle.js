@@ -32,6 +32,26 @@ injectGlobal`
         height:2000px;
         overflow:auto;
         font-size:1rem;
+        overflow-x:hidden;
+        
+        &::-webkit-scrollbar{
+            width: 2px;
+        }
+        
+        &::-webkit-scrollbar-track{
+            /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); */
+            background-color: var(--black);
+            
+        }
+
+
+        &::-webkit-scrollbar-thumb{
+            
+            background-color: #0a0;
+            
+            width:5px;
+            
+        }
     }
 
     
