@@ -47,7 +47,7 @@ injectGlobal`
 
         &::-webkit-scrollbar-thumb{
             
-            background-color: #0a0;
+            background-color: var(--white);
             
             width:5px;
             
