@@ -22,7 +22,7 @@ const Item = styled.a`
         right:50%;
         transition:all 0.25s ease-out;
     }
-    &:hover{
+    &:hover,&:active{
         text-shadow:0 0 0.125em var(--white);
         &:before{
             left:10%;

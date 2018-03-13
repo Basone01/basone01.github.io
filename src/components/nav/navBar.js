@@ -18,11 +18,9 @@ export default class NavBar extends Component {
   render() {
     return (
       <Bar>
-        <NavItem>Item1</NavItem>
-        <NavItem>Item2</NavItem>
-        <NavItem>Item3</NavItem>
-        <NavItem>Item4</NavItem>
-        <NavItem>Item5</NavItem>
+        <NavItem>Home</NavItem>
+        <NavItem>My Work</NavItem>
+        <NavItem>Contact</NavItem>
       </Bar>
     )
   }
