@@ -13,7 +13,7 @@ export default class TypingMessage extends Component {
 	constructor(props) {
 		super(props);
 		this.state={
-			speed:300
+			speed:200
 		}
 	}
 
