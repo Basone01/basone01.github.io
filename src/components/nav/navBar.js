@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
-import NavItem from './item'
+import NavItem from './navItem'
+
 
 const Bar = styled.div`
     display: flex;
@@ -18,9 +19,10 @@ export default class NavBar extends Component {
   render() {
     return (
       <Bar>
-        <NavItem>Home</NavItem>
-        <NavItem>My Work</NavItem>
-        <NavItem>Contact</NavItem>
+        <NavItem exact to="/">Home</NavItem>
+        <NavItem exact to="/works">My Works</NavItem>
+        <NavItem exact to="/resume">Resume</NavItem>
+        <NavItem exact to="/contact">Contact</NavItem>
       </Bar>
     )
   }
