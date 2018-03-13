@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import AnimatedContainer from './animatedContainer'
+import { AnimatedContainer, FlexDownCenter } from './shared/';
 
 export class Works extends Component {
   render() {
     return (
-      <div>
+      <FlexDownCenter>
         This is Works.
-      </div>
+      </FlexDownCenter>
     )
   }
 }
