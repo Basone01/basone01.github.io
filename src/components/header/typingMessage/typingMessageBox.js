@@ -27,7 +27,6 @@ export default class TypingMessage extends Component {
 			if(index>0){
 				wait=breakedMSG[index - 1].length * speed;
 			}
-			console.log(wait);
 			
 			let animationLoop = Math.floor(msgLine.length*0.3);
 			return <MessageBox 
