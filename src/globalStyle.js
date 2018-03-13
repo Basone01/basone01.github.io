@@ -1,5 +1,5 @@
 import { injectGlobal } from 'styled-components';
-import 'normalize.css/normalize.css'
+import 'normalize.css/normalize.css';
 
 injectGlobal`
     /* @import url('https://fonts.googleapis.com/css?family=Pridi:400,700'); */
@@ -13,18 +13,22 @@ injectGlobal`
         font-weight:bold;
     }
 
+    :root{
+        font-size:20px;
+        --white:#bdbdbd;
+        --black:#222;
+    }
+        
     *{
         box-sizing:border-box;
     }
 
-    :root{
-        font-size:20px;
-    }
+    
 
     body{
-        background-color:#222;
+        background-color:var(--black);
         font-family:'Pridi', serif;
-        color:#ddd;
+        color:var(--white);
         height:2000px;
         overflow:auto;
         font-size:1rem;
@@ -32,4 +36,4 @@ injectGlobal`
 
     
 
-`
+`;

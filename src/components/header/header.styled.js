@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
 import styled from 'styled-components';
 
-export const Header = styled.div`
+export const ImgContentBox = styled.div`
     display:flex;
     position:relative;
     height:100vh;
     background-color:rgba(0,0,0,0.5);
     justify-content:center;
     align-items:center;
-    
+    font-size:2rem;
     &:before{
         content:'';
         position:absolute;
@@ -23,8 +22,4 @@ export const Header = styled.div`
         z-index:-1;
     }
 
-
-
 `;
-
-export default Header;
