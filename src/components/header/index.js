@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ImgContentBox } from './header.styled';
+import { ImgContentBox } from './imgContentBox';
 import TypingMessage from './typingMessage'
 export const Header = (props) => {
     return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 
-const Item = styled.a`
+const NavItem = styled.a`
     display:inline-block;
     position: relative;
     box-sizing:border-box;
@@ -28,22 +28,7 @@ const Item = styled.a`
             left:10%;
             right:10%;
         }
-
     }
+`;
 
-    
-        
-    
-
-    
-`
-
-export default class NavItem extends Component {
-  render() {
-    return (
-      <Item>
-        {this.props.children}
-      </Item>
-    )
-  }
-}
+export default NavItem;
