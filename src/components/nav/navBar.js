@@ -19,10 +19,10 @@ export default class NavBar extends Component {
   render() {
     return (
       <Bar>
-        <NavItem exact to="/">Home</NavItem>
-        <NavItem exact to="/works">My Works</NavItem>
-        <NavItem exact to="/resume">Resume</NavItem>
-        <NavItem exact to="/contact">Contact</NavItem>
+        <NavItem exact replace to="/">Home</NavItem>
+        <NavItem exact replace to="/works">My Works</NavItem>
+        <NavItem exact replace to="/resume">Resume</NavItem>
+        <NavItem exact replace to="/contact">Contact</NavItem>
       </Bar>
     )
   }

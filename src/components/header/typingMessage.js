@@ -38,7 +38,6 @@ export default class TypingMessage extends Component {
 
 	setupTypingAnimation() {
 		const { msg } = this.props;
-		const template = '';
 		const timeout = msg.split('').map((c, i) => {
 			const snapshotMsg = msg.substr(0, i+1);
 			return setTimeout(() => {
