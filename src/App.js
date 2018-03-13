@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import { Home, Contact, Works, Resume } from './page/';
 import NavBar from './components/nav/';
 
@@ -12,6 +12,7 @@ class App extends Component {
 				<Route exact path="/works" component={Works} />
 				<Route exact path="/resume" component={Resume} />
 				<Route exact path="/contact" component={Contact} />
+				<Redirect to="/" />
 			</Fragment>
 		);
 	}
