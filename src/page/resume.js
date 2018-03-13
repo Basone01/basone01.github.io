@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import AnimatedContainer from './animatedContainer'
 
-export default class Resume extends Component {
+export class Resume extends Component {
   render() {
     return (
       <div>
@@ -9,3 +10,5 @@ export default class Resume extends Component {
     )
   }
 }
+
+export default AnimatedContainer(Resume);

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-export default class Contact extends Component {
+import AnimatedContainer from './animatedContainer'
+export class Contact extends Component {
   render() {
     return (
       <div>
@@ -9,3 +9,5 @@ export default class Contact extends Component {
     )
   }
 }
+
+export default AnimatedContainer(Contact);
