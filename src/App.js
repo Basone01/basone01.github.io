@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import { Home, Contact, Works, Resume } from './page/';
 import NavBar from './components/nav/';
@@ -6,7 +6,7 @@ import NavBar from './components/nav/';
 class App extends Component {
 	render() {
 		return (
-			<Fragment>
+			<div>
 				<NavBar />
 				<Switch>
 					<Route exact path="/" component={Home} />
@@ -15,7 +15,7 @@ class App extends Component {
 					<Route exact path="/contact" component={Contact} />
 					<Redirect to="/" />
 				</Switch>
-			</Fragment>
+			</div>
 		);
 	}
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ImgContentBox = styled.div`
     display:flex;
     position:relative;
-    height:100vh;
+    height:50vh;
     background-color:rgba(0,0,0,0.5);
     justify-content:center;
     align-items:center;
@@ -16,7 +16,8 @@ export const ImgContentBox = styled.div`
         right:0;
         bottom:0;
         background-image:url(${props=>props.src});
-        background-position:center;
+        background-color:black;
+        background-position:bottom;
         background-repeat:no-repeat;
         background-size:cover;
         z-index:-1;

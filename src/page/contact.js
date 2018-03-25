@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import { AnimatedContainer, FlexDownCenter } from './shared/';
+import { AnimatedContainer, Flex } from './shared/';
 export class Contact extends Component {
 	render() {
-		return <FlexDownCenter>This is Contact.</FlexDownCenter>;
+		return (
+			<Flex jestifyContent="center" alignItems="center">
+				This is Contact.
+			</Flex>
+		);
 	}
 }
 

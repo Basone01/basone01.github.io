@@ -1,4 +1,4 @@
 import AnimatedContainer from './animatedContainer';
-import { FlexDownCenter } from './contentContainer';
-
-export { AnimatedContainer, FlexDownCenter };
+import { Flex } from './contentContainer';
+import { HeadingText, ContentText, Text } from './text';
+export { AnimatedContainer, Flex, HeadingText, ContentText, Text };

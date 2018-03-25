@@ -2,16 +2,7 @@ import { injectGlobal } from 'styled-components';
 import 'normalize.css/normalize.css';
 
 injectGlobal`
-    /* @import url('https://fonts.googleapis.com/css?family=Pridi:400,700'); */
-    @font-face {
-        font-family: Pridi;
-        src: url(${require('./localFonts/Pridi-Regular.ttf')});
-    }
-    @font-face {
-        font-family: Pridi;
-        src: url(${require('./localFonts/Pridi-SemiBold.ttf')});
-        font-weight:bold;
-    }
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
 
     :root{
         font-size:20px;
@@ -21,13 +12,14 @@ injectGlobal`
         
     *{
         box-sizing:border-box;
+        /* border:1px solid white; */
     }
 
     
 
     body{
         background-color:var(--black);
-        font-family:'Pridi', serif;
+        font-family:'Roboto', serif;
         color:var(--white);
         height:2000px;
         overflow:auto;

@@ -16,6 +16,10 @@ export const StyledMessageBox = styled.div`
 	text-shadow: 0 0 0.1em black;
 	text-align: center;
 	height:1em;
+	font-weight:bold;
+	color:white;
+	letter-spacing:0.075em;
+	margin-bottom:0.5em;
 	&:after {
 		content: "|";
 		position: absolute;

@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import { AnimatedContainer, FlexDownCenter } from './shared/';
+import React, { Component } from 'react';
+import { AnimatedContainer, Flex } from './shared/';
 
 export class Works extends Component {
-  render() {
-    return (
-      <FlexDownCenter>
-        This is Works.
-      </FlexDownCenter>
-    )
-  }
+	render() {
+		return (
+			<Flex jestifyContent="center" alignItems="center">
+				This is Works.
+			</Flex>
+		);
+	}
 }
 export default AnimatedContainer(Works);

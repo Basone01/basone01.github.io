@@ -4,8 +4,8 @@ import TypingMessageBox from './typingMessage/'
 
 export const Header = (props) => {
     return (
-        <ImgContentBox src={props.src}>
-            <TypingMessageBox msg={"Hi, Welcome\nI am Basone01."}/>
+        <ImgContentBox src={require('../../img/headerBG.jpg')} >
+            <TypingMessageBox msg={"Hi, Welcome...\nI am BASONE01."}/>
         </ImgContentBox>
     );
 };

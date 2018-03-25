@@ -26,6 +26,7 @@ const NavItem = styled(NavLink)`
 	&:hover,
     &.active{
 		text-shadow: 0 0 0.125em var(--white);
+		color:white;
 		&:before {
 			left: 10%;
 			right: 10%;
