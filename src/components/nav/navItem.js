@@ -32,6 +32,9 @@ const NavItem = styled(NavLink)`
 			right: 10%;
 		}
 	}
+	@media only screen and (max-width:768px){
+	  font-size: 0.5em;
+	}
 `;
 
 export default NavItem;
