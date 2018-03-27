@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const BaseTextStyle = css`
-	text-align: ${(props) => (props.center && 'center') || (props.justify && 'justify') || 'left'};
+	text-align: ${(props) => (props.center && 'center') || props.textAlign || 'left'};
 	text-indent: ${(props) => (props.indent ? '3em' : '0')};
 	margin-top: ${(props) => (props.top ? props.top : '0')};
 	margin-bottom: ${(props) => (props.bottom ? props.bottom : '0')};
