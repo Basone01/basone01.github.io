@@ -61,7 +61,7 @@ const AboutSection = (props) => (
 					</Text>
 				</Flex>
 			</Flex>
-			<ProfilePic src={require('../../img/profilePic.jpg')} />
+			<ProfilePic src={require('img/profilePic.jpg')} />
 		</Flex>
 		<Flex direction="column" alignItems="stretch">
 			<HeadingText center>"  You can see other's mistake more than your mistake, </HeadingText>
