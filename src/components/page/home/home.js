@@ -1,13 +1,18 @@
-import React, { Fragment} from 'react';
+import React, {Fragment} from 'react';
 import {AnimatedContainer, Flex, Text, HeadingText} from 'components/shared/';
 import Header from 'components/header/';
 import {Section, ProfilePic, Separator} from './home.styled';
+
+
 
 export function Home(props) {
     return (
         <Fragment>
             <Header/>
-            <Section>
+            <Section style={{
+                transform: "translateY(-110px)",
+                marginBottom:"-90px"
+            }}>
                 <Flex justifyContent="center" alignItems="stretch" style={{maxWidth: "1024px"}}>
                     <Flex fluid grow={1} direction="column" alignItems="stretch">
                         <Flex fluid alignItems="baseline" justifyContent="center" style={{marginBottom: '1em'}}>
@@ -25,14 +30,15 @@ export function Home(props) {
                         <Flex fluid direction="column">
                             <HeadingText>About Me:</HeadingText>
                             <Text indent justify>
-                                Hi, I'm a Computer-Science student from KMUTNB. I start my programming life from C
-                                language
-                                while I was studying Matthayom 5 and I liked it since then,
+                                Hi, My name's Bas.
+                                I'm a Computer-Science student from KMUTNB. Programming has come to my life while I was
+                                studying Matthayom 5,
+                                It start from C language and I liked it since then,
                                 because it is only one subject that I can prove all answer by myself.
                                 That's why decided to be a Computer-Science student.
                             </Text>
                             <Text indent justify>
-                                When I was studying in the university,
+                                Since I was studied in the university,
                                 I met many programming language, many problem and got some skills form them,
                                 And now I'm looking for an opportunity to use them to make something great.
                             </Text>
@@ -46,10 +52,16 @@ export function Home(props) {
                 </Flex>
                 <Separator/>
                 <Flex direction="column" alignItems="stretch">
-                    <HeadingText center>" You can see other's mistake more than your mistake, </HeadingText>
-                    <HeadingText center>and you can see other's bugs more than your bugs "</HeadingText>
+                    <HeadingText center>" If you see other's mistake more than your mistake, </HeadingText>
+                    <HeadingText center>You will see other's bugs more than your bugs "</HeadingText>
                 </Flex>
                 <Separator/>
+            </Section>
+            <Section>
+                <HeadingText>
+                    Working Style
+                </HeadingText>
+
             </Section>
         </Fragment>
     );

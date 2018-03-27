@@ -11,7 +11,6 @@ const Section = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	transform: translateY(-110px);
 	&> ${Separator} {
 		max-width: 1024px;
 		
@@ -19,7 +18,7 @@ const Section = styled.div`
 	
 	@media only screen and (max-width:768px){
 	  font-size: 0.5em;
-	  padding: 0 5em;
+	  padding: 0 2em;
 	  transform: translateY(-60px);
 	}
 	@media only screen and (max-width:384px){
