@@ -20,6 +20,9 @@ export const StyledMessageBox = styled.div`
 	color:white;
 	letter-spacing:0.075em;
 	margin-bottom:0.5em;
+	@media only screen and (max-width:768px){
+	  font-size: 0.6em;
+	}
 	&:after {
 		content: "|";
 		position: absolute;
