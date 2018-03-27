@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { AnimatedContainer, Flex, Text, HeadingText } from './shared/';
-import Header from '../components/header/';
+import Header from '../header/';
 import styled from 'styled-components';
 
 
@@ -13,6 +13,17 @@ const StyledAboutSection = Flex.extend`
 	& > * {
 		border-bottom: 2px solid #FFF1;
 	}
+	@media only screen and (max-width:768px){
+	  font-size: 0.5em;
+	  padding: 0 5em;
+	  transform: translateY(-60px);
+	}
+	@media only screen and (max-width:384px){
+	  font-size: 0.5em;
+	  padding: 0 0.5em;
+	  transform: translateY(-50px);
+	  
+	}
 `;
 
 const ProfilePic = styled.img`
@@ -21,6 +32,12 @@ const ProfilePic = styled.img`
 	height: auto;
 	border: 5px solid var(--black);
 	margin-left: 1.5em;
+	@media only screen and (max-width:768px){
+	  width: 120px;
+	}
+	@media only screen and (max-width:384px){
+	  width: 90px;
+	}
 `;
 
 const AboutSection = (props) => (
@@ -35,13 +52,16 @@ const AboutSection = (props) => (
 				<Flex fluid direction="column">
 					<HeadingText>About Me:</HeadingText>
 					<Text indent justify	>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores error quia consequuntur,
-						neque quibusdam nam possimus ipsam, doloribus provident eum corporis, quae officiis aut vero!
-						Quaerat, quisquam necessitatibus. Odit, veniam?
+						Hi, I'm a Computer-Science student from KMUTNB. I start my programming life from C language
+                        while I was studying Matthayom 5 and I liked it since then,
+                        because it is only one subject that I can prove all answer by myself.
+                        That's why decided to be a Computer-Science student. when I was studiying in the university,
+                        I met many programming language, many problem and got some skills form them,
+                        And now I'm looking for an opportunity to use them to make something great.
 					</Text>
 				</Flex>
 			</Flex>
-			<ProfilePic src={require('../img/profilePic.jpg')} />
+			<ProfilePic src={require('../../img/profilePic.jpg')} />
 		</Flex>
 		<Flex direction="column" alignItems="stretch">
 			<HeadingText center>"  You can see other's mistake more than your mistake, </HeadingText>

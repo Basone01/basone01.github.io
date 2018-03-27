@@ -12,7 +12,7 @@ export class Resume extends Component {
 		return (
 			<Flex justifyContent="flex-start">
 				<Flex basis="30%" alignItems="center" direction="column">
-					<Image width="50%" src={require('../img/profileResume.jpg')} />
+					<Image width="50%" src={require('../../img/profileResume.jpg')} />
 					<h3>BASONE01</h3>
 					<HeadingText>Name:</HeadingText>
 					<ContentText indent>Surachet Sangaseang</ContentText>

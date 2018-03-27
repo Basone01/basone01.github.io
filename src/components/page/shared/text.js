@@ -7,7 +7,9 @@ const BaseTextStyle = css`
 	margin-bottom: ${(props) => (props.bottom ? props.bottom : '0')};
 `;
 
-const HeadingText = styled.h4`${BaseTextStyle};`;
+const HeadingText = styled.h4`
+	${BaseTextStyle};
+`;
 const ContentText = styled.h5`
 	${BaseTextStyle};
 	font-weight: 400;
@@ -15,9 +17,11 @@ const ContentText = styled.h5`
 
 const Text = styled.p`
 	${BaseTextStyle};
-	letter-spacing: 0.025em;
+	letter-spacing: 0.03em;
 	font-size: 0.8rem;
 	font-weight: 400;
+	line-height: 1.2em;
+	padding-top: 0.25em;
 `;
 
 export { HeadingText, ContentText, Text };
