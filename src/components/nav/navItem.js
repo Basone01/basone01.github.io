@@ -10,8 +10,7 @@ const NavItem = styled(NavLink)`
 	color: var(--white);
 	cursor: pointer;
     text-decoration:none;
-	transition: color 0.5s;
-	transition: text-shadow 0.5s;
+	transition: text-shadow 0.5s,color 0.5s;
 	&:before {
 		content: '';
 		display: block;
