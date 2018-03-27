@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {AnimatedContainer, Flex, HeadingText, ContentText, Text} from './shared/';
+import {AnimatedContainer, Flex, HeadingText, ContentText, Text} from '../shared/';
 import styled from 'styled-components';
 
 const Image = styled.img`
