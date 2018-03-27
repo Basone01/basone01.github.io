@@ -5,7 +5,7 @@ const Separator = styled.div`
   border-bottom: 2px solid #FFF1;
   width: 100%;
 `;
-const StyledAboutSection = styled.div`
+const Section = styled.div`
 	min-height: 350px;
 	display: flex;
 	flex-direction: column;
@@ -45,4 +45,4 @@ const ProfilePic = styled.img`
 	}
 `;
 
-export {Separator, ProfilePic, StyledAboutSection};
+export {Separator, ProfilePic, Section};

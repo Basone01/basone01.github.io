@@ -1,13 +1,13 @@
 import React, { Fragment} from 'react';
 import {AnimatedContainer, Flex, Text, HeadingText} from 'components/shared/';
 import Header from 'components/header/';
-import {StyledAboutSection, ProfilePic, Separator} from './home.styled';
+import {Section, ProfilePic, Separator} from './home.styled';
 
 export function Home(props) {
     return (
         <Fragment>
             <Header/>
-            <StyledAboutSection>
+            <Section>
                 <Flex justifyContent="center" alignItems="stretch" style={{maxWidth: "1024px"}}>
                     <Flex fluid grow={1} direction="column" alignItems="stretch">
                         <Flex fluid alignItems="baseline" justifyContent="center" style={{marginBottom: '1em'}}>
@@ -50,7 +50,7 @@ export function Home(props) {
                     <HeadingText center>and you can see other's bugs more than your bugs "</HeadingText>
                 </Flex>
                 <Separator/>
-            </StyledAboutSection>
+            </Section>
         </Fragment>
     );
 }
