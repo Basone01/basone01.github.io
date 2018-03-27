@@ -1,8 +1,7 @@
 import React, {Fragment} from 'react';
 import {AnimatedContainer, Flex, Text, HeadingText} from 'components/shared/';
 import Header from 'components/header/';
-import {Section, ProfilePic, Separator} from './home.styled';
-
+import {Section, ProfilePic, Separator,WorkStyle} from './home.styled';
 
 
 export function Home(props) {
@@ -58,9 +57,18 @@ export function Home(props) {
                 <Separator/>
             </Section>
             <Section>
-                <HeadingText>
+                <HeadingText bottom="1em">
                     Working Style
                 </HeadingText>
+                <Flex fluid alignItems="stretch" direction="column">
+                    <WorkStyle title="Coding" percent={80}/>
+                    <WorkStyle title="Code Design" percent={70}/>
+                    <WorkStyle title="Project File Structure" percent={50}/>
+                    <WorkStyle title="UI Design" percent={30}/>
+                    <WorkStyle title="Documentation" percent={20}/>
+                    <WorkStyle title="Team Organizing" percent={20}/>
+                </Flex>
+
 
             </Section>
         </Fragment>

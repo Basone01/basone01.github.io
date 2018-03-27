@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
+import {Flex,Text} from "components/shared";
+import React from "react";
 
 const Separator = styled.div`
   display: block;
@@ -11,7 +13,7 @@ const Section = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	&> ${Separator} {
+	&> * {
 		max-width: 1024px;
 		
 	}
@@ -44,4 +46,46 @@ const ProfilePic = styled.img`
 	}
 `;
 
-export {Separator, ProfilePic, Section};
+const MeterEffect = keyframes`
+  from{
+    right:100%;
+  }
+  to{
+    right:${props=>props.percent||'0'}%;
+  }
+`
+
+
+const Meter = styled.div`
+  height: 0.5em;
+  border: 2px solid var(--white);
+  margin:0.5em 1em ;
+  width: 20em;
+  background: var(--white);
+  position:relative;
+  &::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    right: ${props=>100-props.percent||0}%;
+    top: 0;
+    bottom: 0;
+    background-color:${props=>props.color||'var(--black)'};
+    z-index: 1;
+    animation: ${MeterEffect} 2s;
+  }
+`;
+
+
+const WorkStyle = (props) => (
+    <Flex fluid alignItems="baseline">
+        <Flex fluid basis="40%" alignItems="stretch" direction="column">
+            <Text textAlign="right">{props.title}</Text>
+        </Flex>
+        <Flex fluid basis="60%" alignItems="stretch" direction="column">
+            <Meter percent={props.percent}/>
+        </Flex>
+    </Flex>
+);
+
+export {Separator, ProfilePic, Section,WorkStyle};
