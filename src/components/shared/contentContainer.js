@@ -9,4 +9,5 @@ export const Flex = styled.div`
 	flex-grow: ${(props) => props.grow || '0'};
 	flex-basis: ${(props) => props.basis || 'auto'};
 	flex-wrap: ${(props) => props.wrap || 'nowrap'};
+	align-self: ${(props) => props.alignSelf || 'auto'};
 `;
