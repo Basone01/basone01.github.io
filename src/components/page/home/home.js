@@ -12,7 +12,7 @@ export function Home(props) {
                 transform: "translateY(-110px)",
                 marginBottom:"-90px"
             }}>
-                <Flex justifyContent="center" alignItems="stretch" style={{maxWidth: "1024px"}}>
+                <Flex justifyContent="center" alignItems="center" style={{maxWidth: "1024px"}} >
                     <Flex fluid grow={1} direction="column" alignItems="stretch">
                         <Flex fluid alignItems="baseline" justifyContent="center" style={{marginBottom: '1em'}}>
                             <h3 style={{textAlign: "right"}}>Surachet Sangasaeng</h3>
@@ -61,16 +61,15 @@ export function Home(props) {
                     Working Style
                 </HeadingText>
                 <Flex fluid alignItems="stretch" direction="column">
-                    <WorkStyle title="Coding" percent={80}/>
+                    <WorkStyle title="Coding" percent={85}/>
                     <WorkStyle title="Code Design" percent={70}/>
                     <WorkStyle title="Project File Structure" percent={50}/>
                     <WorkStyle title="UI Design" percent={30}/>
                     <WorkStyle title="Documentation" percent={20}/>
-                    <WorkStyle title="Team Organizing" percent={20}/>
+                    <WorkStyle title="Team Organizing" percent={15}/>
                 </Flex>
-
-
             </Section>
+
         </Fragment>
     );
 }
