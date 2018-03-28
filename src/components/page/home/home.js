@@ -1,7 +1,8 @@
 import React, {Fragment} from 'react';
-import {AnimatedContainer, Flex, Text, HeadingText} from 'components/shared/';
+import {AnimatedContainer, Flex, Text, HeadingText,Separator} from 'components/shared/';
 import Header from 'components/header/';
-import {Section, ProfilePic, Separator,WorkStyle} from './home.styled';
+import SkillsList from "components/skills/";
+import {Section, ProfilePic, WorkStyle} from './home.styled';
 
 
 export function Home(props) {
@@ -10,9 +11,9 @@ export function Home(props) {
             <Header/>
             <Section style={{
                 transform: "translateY(-110px)",
-                marginBottom:"-90px"
+                marginBottom: "-90px"
             }}>
-                <Flex justifyContent="center" alignItems="center" style={{maxWidth: "1024px"}} >
+                <Flex justifyContent="center" alignItems="center" style={{maxWidth: "1024px"}}>
                     <Flex fluid grow={1} direction="column" alignItems="stretch">
                         <Flex fluid alignItems="baseline" justifyContent="center" style={{marginBottom: '1em'}}>
                             <h3 style={{textAlign: "right"}}>Surachet Sangasaeng</h3>
@@ -68,8 +69,21 @@ export function Home(props) {
                     <WorkStyle title="Documentation" percent={20}/>
                     <WorkStyle title="Team Organizing" percent={15}/>
                 </Flex>
+                <Separator space="1em"/>
             </Section>
-
+            <Section>
+                <HeadingText bottom="1em">
+                    Skills
+                </HeadingText>
+                <SkillsList>
+                    <SkillsList.Skill src={require("img/reactIcon.png")} title={"React"}/>
+                    <SkillsList.Skill src={require("img/nodejsIcon.png")} title={"NodeJS"}/>
+                    <SkillsList.Skill src={require("img/htmlIcon.png")} title={"HTML"}/>
+                    <SkillsList.Skill src={require("img/cssIcon.png")} title={"CSS"}/>
+                    <SkillsList.Skill src={require("img/javaIcon.jpg")} title={"Java"}/>
+                </SkillsList>
+                <Separator space="1em"/>
+            </Section>
         </Fragment>
     );
 }

@@ -1,18 +1,15 @@
 import styled, {keyframes} from "styled-components";
-import {Flex, Text} from "components/shared";
+import {Flex, Text,Separator} from "components/shared";
 import React from "react";
 
-const Separator = styled.div`
-  display: block;
-  border-bottom: 2px solid #FFF1;
-  width: 100%;
-`;
+
 const Section = styled.div`
-	min-height: 350px;
+	//min-height: 350px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+	//padding: 1em 0;
 	&> * {
 		max-width: 1024px;
 		
@@ -83,10 +80,10 @@ const Meter = styled.div`
 
 const WorkStyle = (props) => (
     <Flex fluid alignItems="baseline">
-        <Flex fluid basis="40%" alignItems="stretch" direction="column">
+        <Flex fluid basis="30%" alignItems="stretch" direction="column">
             <Text textAlign="right">{props.title}</Text>
         </Flex>
-        <Flex fluid basis="60%" alignItems="stretch" direction="column">
+        <Flex fluid basis="70%" alignItems="stretch" direction="column">
             <Meter percent={props.percent}/>
         </Flex>
     </Flex>

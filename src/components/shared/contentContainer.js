@@ -8,6 +8,14 @@ export const Flex = styled.div`
 	align-items: ${(props) => props.alignItems || 'flex-start'};
 	flex-grow: ${(props) => props.grow || '0'};
 	flex-basis: ${(props) => props.basis || 'auto'};
-	flex-wrap: ${(props) => props.wrap || 'nowrap'};
+	flex-wrap: ${(props) => props.wrap? 'wrap':'nowrap'};
 	align-self: ${(props) => props.alignSelf || 'auto'};
+`;
+
+export const Separator = styled.div`
+  display: block;
+  border-bottom: 2px solid ${props=>props.inverted?'black':'#FFF1'};
+  width: 100%;
+  margin: ${props=>props.space} 0;
+  
 `;
