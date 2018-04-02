@@ -10,6 +10,10 @@ export const Flex = styled.div`
     flex-basis: ${props => props.basis || 'auto'};
     flex-wrap: ${props => (props.wrap ? 'wrap' : 'nowrap')};
     align-self: ${props => props.alignSelf || 'auto'};
+    & > * {
+        ${props => props.childGrow && 'flex-grow:1;'};
+        ${props => props.childSpace && `margin:${props.childSpace};`};
+    }
 `;
 
 export const Separator = styled.div`
