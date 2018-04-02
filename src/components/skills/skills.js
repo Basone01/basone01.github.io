@@ -50,11 +50,6 @@ function Skill(props) {
 
 export default class SkillList extends Component {
     static Skill = Skill;
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Flex fluid justifyContent="center" wrap>
