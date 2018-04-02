@@ -9,6 +9,7 @@ export function Home(props) {
         <Fragment>
             <Header />
             <Wrapper>
+                {/* ABOUT ME SECTION */}
                 <Section
                     style={{
                         transform: 'translateY(-110px)',
@@ -38,7 +39,7 @@ export function Home(props) {
                             </Flex>
                             <Flex fluid direction="column">
                                 <HeadingText top="0.5em" bottom="0.25em">
-                                    About Me:
+                                    ABOUT ME:
                                 </HeadingText>
                                 <Text indent justify>
                                     Hi, My name's Bas. I'm a Computer-Science student from KMUTNB.
@@ -55,6 +56,8 @@ export function Home(props) {
                             </Flex>
                         </Flex>
 
+                        {/* PROFILE PIC SIDE */}
+
                         <Flex
                             fluid
                             direction="column"
@@ -65,22 +68,39 @@ export function Home(props) {
                             <HeadingText center>THIS IS ME !!!</HeadingText>
                         </Flex>
                     </Flex>
+                    <Separator space="1em" />
+
+                    {/* INFO SECTION */}
+
+                    <Section>
+                        <HeadingText large bottom="1em">INFO</HeadingText>
+                        <Flex>
+                            <HeadingText>123</HeadingText>
+                            <HeadingText>123</HeadingText>
+                            <HeadingText>123</HeadingText>
+                        </Flex>
+                    </Section>
+
+                    {/* QUOTE */}
+
                     <Separator />
+
                     <Flex direction="column" alignItems="stretch">
                         <HeadingText center>
-                            " If you see other's mistake more than your mistake,{' '}
+                            " If you see other's mistake more than your mistake,
                         </HeadingText>
                         <HeadingText center>
                             You will see other's bugs more than your bugs "
                         </HeadingText>
                     </Flex>
+
                     <Separator />
                 </Section>
+
+                {/* STYLE SECTION */}
+
                 <Section>
-                    <HeadingText>Info</HeadingText>
-                </Section>
-                <Section>
-                    <HeadingText bottom="1em">Working Style</HeadingText>
+                    <HeadingText large bottom="1em">STYLE</HeadingText>
                     <Flex fluid alignItems="stretch" direction="column">
                         <WorkStyle title="Coding" percent={85} />
                         <WorkStyle title="Code Design" percent={70} />
@@ -89,10 +109,13 @@ export function Home(props) {
                         <WorkStyle title="Documentation" percent={20} />
                         <WorkStyle title="Team Organizing" percent={15} />
                     </Flex>
-                    <Separator space="1em" />
                 </Section>
+                <Separator space="1em" />
+
+                {/* SKILLS SECTION */}
+
                 <Section>
-                    <HeadingText bottom="1em">Skills</HeadingText>
+                    <HeadingText large bottom="1em">SKILLs</HeadingText>
                     <SkillsList>
                         <SkillsList.Skill src={require('img/reactIcon.png')} title={'React'} />
                         <SkillsList.Skill src={require('img/nodejsIcon.png')} title={'NodeJS'} />
@@ -100,8 +123,8 @@ export function Home(props) {
                         <SkillsList.Skill src={require('img/cssIcon.png')} title={'CSS'} />
                         <SkillsList.Skill src={require('img/javaIcon.jpg')} title={'Java'} />
                     </SkillsList>
-                    <Separator space="1em" />
                 </Section>
+                <Separator space="1em" />
             </Wrapper>
         </Fragment>
     );
