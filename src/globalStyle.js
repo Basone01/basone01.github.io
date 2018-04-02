@@ -31,21 +31,23 @@ injectGlobal`
         }
         
         &::-webkit-scrollbar-track{
-            /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); */
             background-color: var(--black);
-            
         }
 
-
         &::-webkit-scrollbar-thumb{
-            
             background-color: var(--white);
-            
             width:5px;
-            
         }
     }
 
+    a{
+        text-decoration:none;
+        color: inherit;
+        transition: color 0.5s;
+        &:hover{
+            color:white;
+        }
+    }
     
 
 `;
