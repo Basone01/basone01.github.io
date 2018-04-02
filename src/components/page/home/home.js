@@ -1,9 +1,17 @@
 import React, { Fragment } from 'react';
-import { AnimatedContainer, Flex, Text, HeadingText, Separator, Wrapper } from 'components/shared/';
+import {
+    AnimatedContainer,
+    Flex,
+    Text,
+    HeadingText,
+    Separator,
+    Wrapper,
+    ContentText
+} from 'components/shared/';
 import Header from './header/';
 import SkillsList from 'components/skills/';
 import { Section, ProfilePic, WorkStyle } from './home.styled';
-
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 export function Home(props) {
     return (
         <Fragment>
@@ -12,18 +20,13 @@ export function Home(props) {
                 {/* ABOUT ME SECTION */}
                 <Section
                     style={{
-                        transform: 'translateY(-110px)',
+                        transform: 'translateY(-72px)',
                         marginBottom: '-90px'
                     }}
                 >
-                    <Flex justifyContent="center" alignItems="center">
+                    <Flex fluid justifyContent="center" alignItems="center">
                         <Flex fluid grow={1} direction="column" alignItems="stretch">
-                            <Flex
-                                fluid
-                                alignItems="baseline"
-                                justifyContent="center"
-                                style={{ marginBottom: '1em' }}
-                            >
+                            <Flex fluid alignItems="baseline" justifyContent="center">
                                 <h3 style={{ textAlign: 'right' }}>Surachet Sangasaeng</h3>
                                 <span
                                     style={{
@@ -37,10 +40,8 @@ export function Home(props) {
                                 />
                                 <p style={{ textAlign: 'left' }}>Computer Science</p>
                             </Flex>
-                            <Flex fluid direction="column">
-                                <HeadingText top="0.5em" bottom="0.25em">
-                                    ABOUT ME:
-                                </HeadingText>
+                            <Flex direction="column">
+                                <HeadingText bottom="0.25em">ABOUT ME:</HeadingText>
                                 <Text indent justify>
                                     Hi, My name's Bas. I'm a Computer-Science student from KMUTNB.
                                     Programming has come to my life while I was studying Matthayom
@@ -68,39 +69,99 @@ export function Home(props) {
                             <HeadingText center>THIS IS ME !!!</HeadingText>
                         </Flex>
                     </Flex>
-                    <Separator space="1em" />
-
-                    {/* INFO SECTION */}
-
-                    <Section>
-                        <HeadingText large bottom="1em">INFO</HeadingText>
-                        <Flex>
-                            <HeadingText>123</HeadingText>
-                            <HeadingText>123</HeadingText>
-                            <HeadingText>123</HeadingText>
-                        </Flex>
-                    </Section>
-
-                    {/* QUOTE */}
-
-                    <Separator />
-
-                    <Flex direction="column" alignItems="stretch">
-                        <HeadingText center>
-                            " If you see other's mistake more than your mistake,
-                        </HeadingText>
-                        <HeadingText center>
-                            You will see other's bugs more than your bugs "
-                        </HeadingText>
-                    </Flex>
-
-                    <Separator />
                 </Section>
+
+                {/* INFO SECTION */}
+
+                <Section>
+                    <Flex fluid alignSelf="stretch" justifyContent="center">
+                        <Flex direction="column" alignItems="stretch">
+                            <HeadingText center bottom="0.25em">
+                                Personal
+                            </HeadingText>
+                            <HeadingText small>Full name :</HeadingText>
+                            <Text indent bottom="0.5em">
+                                Surachet Sangasaeng
+                            </Text>
+                            <HeadingText small>Nickname :</HeadingText>
+                            <Text indent bottom="0.5em">
+                                Bas
+                            </Text>
+                            <HeadingText small>Date of Birth :</HeadingText>
+                            <Text indent bottom="0.5em">
+                                19 Oct 1995
+                            </Text>
+                            <HeadingText small>Hobbies :</HeadingText>
+                            <Text indent bottom="0.5em">
+                                <FontAwesomeIcon fixedWidth icon="camera-retro" size="2x" />
+                                <FontAwesomeIcon fixedWidth icon="headphones" size="2x" />
+                                <FontAwesomeIcon fixedWidth icon="gamepad" size="2x" />
+                            </Text>
+                        </Flex>
+                        <Flex direction="column" alignItems="stretch">
+                            <HeadingText center bottom="0.25em">
+                                Contact
+                            </HeadingText>
+                            <HeadingText small>Email :</HeadingText>
+                            <Text indent bottom="0.5em">
+                                basone01@hotmail.com
+                            </Text>
+                            <HeadingText small>Telephone :</HeadingText>
+                            <Text indent bottom="0.5em">
+                                081-7650133
+                            </Text>
+                            <HeadingText small>Socials :</HeadingText>
+                            <Text indent bottom="0.5em">
+                                <a target="_blank" href="http://line.me/ti/p/~basone01">
+                                    <FontAwesomeIcon
+                                        fixedWidth
+                                        icon={['fab', 'github']}
+                                        size="lg"
+                                    />{' '}
+                                    Github : basone01
+                                </a>
+                            </Text>
+                            <Text indent bottom="0.5em">
+                                <a target="_blank" href="http://line.me/ti/p/~basone01">
+                                    <FontAwesomeIcon
+                                        fixedWidth
+                                        icon={['fab', 'facebook']}
+                                        size="lg"
+                                    />{' '}
+                                    Facebook : basone01
+                                </a>
+                            </Text>
+                            <Text indent bottom="0.5em">
+                                <a target="_blank" href="http://line.me/ti/p/~basone01">
+                                    <FontAwesomeIcon fixedWidth icon={['fab', 'line']} size="lg" />{' '}
+                                    Line : basone01
+                                </a>
+                            </Text>
+                        </Flex>
+                    </Flex>
+                </Section>
+
+                {/* QUOTE */}
+
+                <Separator />
+
+                <Flex direction="column" alignItems="stretch">
+                    <HeadingText center>
+                        " If you see other's mistake more than your mistake,
+                    </HeadingText>
+                    <HeadingText center>
+                        You will see other's bugs more than your bugs "
+                    </HeadingText>
+                </Flex>
+
+                <Separator />
 
                 {/* STYLE SECTION */}
 
                 <Section>
-                    <HeadingText large bottom="1em">STYLE</HeadingText>
+                    <HeadingText large bottom="1em" top="1em">
+                        STYLE
+                    </HeadingText>
                     <Flex fluid alignItems="stretch" direction="column">
                         <WorkStyle title="Coding" percent={85} />
                         <WorkStyle title="Code Design" percent={70} />
@@ -115,7 +176,9 @@ export function Home(props) {
                 {/* SKILLS SECTION */}
 
                 <Section>
-                    <HeadingText large bottom="1em">SKILLs</HeadingText>
+                    <HeadingText large bottom="1em">
+                        SKILLs
+                    </HeadingText>
                     <SkillsList>
                         <SkillsList.Skill src={require('img/reactIcon.png')} title={'React'} />
                         <SkillsList.Skill src={require('img/nodejsIcon.png')} title={'NodeJS'} />

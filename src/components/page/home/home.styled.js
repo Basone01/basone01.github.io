@@ -7,6 +7,7 @@ const Section = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    align-self: stretch;
 
     @media only screen and (max-width: 768px) {
         font-size: 0.5rem;
