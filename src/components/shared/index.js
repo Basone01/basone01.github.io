@@ -1,4 +1,3 @@
-import AnimatedContainer from './animatedContainer';
-import { Flex ,Separator} from './contentContainer';
-import { HeadingText, ContentText, Text } from './text';
-export { AnimatedContainer, Flex, HeadingText, ContentText, Text,Separator };
+export { AnimatedContainer } from "./animatedContainer";
+export { Flex, Separator, Wrapper } from "./contentContainer";
+export { HeadingText, ContentText, Text } from "./text";
