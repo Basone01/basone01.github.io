@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
-import { Home, Contact, Works, Resume ,Journeys } from './components/page/';
+import { Home, Contact, Works, Resume, Journeys } from './components/page/';
 import NavBar from './components/nav/';
 
 class App extends Component {
-	render() {
-		return (
-			<Fragment>
-				<NavBar />
-				<div style={{overflow:"hidden"}}>
+    render() {
+        return (
+            <Fragment>
+                <NavBar />
+                <div style={{ overflow: 'hidden' }}>
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/journeys" component={Journeys} />
@@ -17,11 +17,10 @@ class App extends Component {
                         <Route exact path="/contact" component={Contact} />
                         <Redirect to="/" />
                     </Switch>
-				</div>
-
-			</Fragment>
-		);
-	}
+                </div>
+            </Fragment>
+        );
+    }
 }
 
 export default App;

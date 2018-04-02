@@ -13,19 +13,19 @@ const FadeIn = keyframes`
 `;
 
 const Container = styled.div`
-	display: block;
-	animation: ${FadeIn} 0.5s ease-in-out;
+    display: block;
+    animation: ${FadeIn} 0.5s ease-in-out;
 `;
 
-export const AnimatedContainer = (ChildComponent) => {
-	return class AnimatedContainer extends Component {
-		render() {
-			return (
-				<Container>
-					<ChildComponent {...this.props}/>
-				</Container>
-			);
-		}
-	};
+export const AnimatedContainer = ChildComponent => {
+    return class AnimatedContainer extends Component {
+        render() {
+            return (
+                <Container>
+                    <ChildComponent {...this.props} />
+                </Container>
+            );
+        }
+    };
 };
 export default AnimatedContainer;

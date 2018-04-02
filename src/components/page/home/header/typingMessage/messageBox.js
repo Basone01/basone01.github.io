@@ -1,45 +1,45 @@
-import React, { Component } from 'react'
-import StyledMessageBox from './messageBox.styled'
+import React, { Component } from 'react';
+import StyledMessageBox from './messageBox.styled';
 
 export default class MessageBox extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			message: '',
-			timeout: null,
-		};
-	}
+    constructor(props) {
+        super(props);
+        this.state = {
+            message: '',
+            timeout: null
+        };
+    }
 
-	setupTypingAnimation() {
-		const { msg, wait, speed } = this.props;
-		const timeout = msg.split('').map((c, i) => {
-			const snapshotMsg = msg.substr(0, i + 1);
-			return setTimeout(() => {
-				this.setState({ message: snapshotMsg });
-			}, wait + (i + 1) * speed);
-		});
-		this.setState({ timeout });
-	}
+    setupTypingAnimation() {
+        const { msg, wait, speed } = this.props;
+        const timeout = msg.split('').map((c, i) => {
+            const snapshotMsg = msg.substr(0, i + 1);
+            return setTimeout(() => {
+                this.setState({ message: snapshotMsg });
+            }, wait + (i + 1) * speed);
+        });
+        this.setState({ timeout });
+    }
 
-	cancelAllAnimation() {
-		this.state.timeout.forEach(clearTimeout);
-	}
+    cancelAllAnimation() {
+        this.state.timeout.forEach(clearTimeout);
+    }
 
-	componentDidMount() {
-		this.setupTypingAnimation();
-	}
+    componentDidMount() {
+        this.setupTypingAnimation();
+    }
 
-	componentWillUnmount() {
-		this.cancelAllAnimation();
-	}
+    componentWillUnmount() {
+        this.cancelAllAnimation();
+    }
 
-	render() {
-		const { message } = this.state;
-		const {wait, last, loop } = this.props;
-		return (
-			<StyledMessageBox delay={wait} blinkLoop={loop} last={last}>
-				{message}
-			</StyledMessageBox>
-		);
-	}
+    render() {
+        const { message } = this.state;
+        const { wait, last, loop } = this.props;
+        return (
+            <StyledMessageBox delay={wait} blinkLoop={loop} last={last}>
+                {message}
+            </StyledMessageBox>
+        );
+    }
 }
