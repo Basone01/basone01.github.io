@@ -93,26 +93,33 @@ export function Home(props) {
                             </Text>
                             <HeadingText small>Hobbies :</HeadingText>
                             <Text indent bottom="0.5em">
-                                <FontAwesomeIcon fixedWidth icon="camera-retro" size="2x" />
-                                <FontAwesomeIcon fixedWidth icon="headphones" size="2x" />
+                                <a target="_blank" href="http://www.instagram.com/basone01">
+                                    <FontAwesomeIcon fixedWidth icon="camera-retro" size="2x" />
+                                </a>
+                                <FontAwesomeIcon fixedWidth icon="headphones" size="2x" />{' '}
                                 <FontAwesomeIcon fixedWidth icon="gamepad" size="2x" />
                             </Text>
                         </Flex>
+                        
                         <Flex direction="column" alignItems="stretch">
                             <HeadingText center bottom="0.25em">
                                 Contact
                             </HeadingText>
                             <HeadingText small>Email :</HeadingText>
                             <Text indent bottom="0.5em">
-                                basone01@hotmail.com
+                                <a href="mailto:basone01@hotmail.com">
+                                    <FontAwesomeIcon fixedWidth icon="envelope" size="lg" />{' '}
+                                    basone01@hotmail.com
+                                </a>
                             </Text>
                             <HeadingText small>Telephone :</HeadingText>
                             <Text indent bottom="0.5em">
+                                <FontAwesomeIcon fixedWidth icon="phone-square" size="lg" />{' '}
                                 081-7650133
                             </Text>
                             <HeadingText small>Socials :</HeadingText>
                             <Text indent bottom="0.5em">
-                                <a target="_blank" href="http://line.me/ti/p/~basone01">
+                                <a target="_blank" href="http://github.com/basone01">
                                     <FontAwesomeIcon
                                         fixedWidth
                                         icon={['fab', 'github']}
@@ -122,7 +129,7 @@ export function Home(props) {
                                 </a>
                             </Text>
                             <Text indent bottom="0.5em">
-                                <a target="_blank" href="http://line.me/ti/p/~basone01">
+                                <a target="_blank" href="http://fb.com/basone01">
                                     <FontAwesomeIcon
                                         fixedWidth
                                         icon={['fab', 'facebook']}
