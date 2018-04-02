@@ -4,16 +4,11 @@ import React from "react";
 
 
 const Section = styled.div`
-	//min-height: 350px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	//padding: 1em 0;
-	&> * {
-		max-width: 1024px;
-		
-	}
+
 	
 	@media only screen and (max-width:768px){
 	  font-size: 0.5em;
