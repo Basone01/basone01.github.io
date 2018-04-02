@@ -9,12 +9,12 @@ const Section = styled.div`
     justify-content: flex-start;
 
     @media only screen and (max-width: 768px) {
-        font-size: 0.5em;
+        font-size: 0.5rem;
         padding: 0 2em;
         transform: translateY(-60px);
     }
     @media only screen and (max-width: 384px) {
-        font-size: 0.5em;
+        font-size: 0.5rem;
         padding: 0 0.5em;
         transform: translateY(-50px);
     }

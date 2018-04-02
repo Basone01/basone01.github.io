@@ -9,6 +9,8 @@ const BaseTextStyle = css`
 
 const HeadingText = styled.h4`
     ${BaseTextStyle};
+    letter-spacing: 1px;
+    font-size: ${props => (props.large ? 1.25 : 1)}rem;
 `;
 const ContentText = styled.h5`
     ${BaseTextStyle};

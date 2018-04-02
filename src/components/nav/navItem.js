@@ -32,7 +32,7 @@ const NavItem = styled(NavLink)`
         }
     }
     @media only screen and (max-width: 768px) {
-        font-size: 0.5em;
+        font-size: 0.5rem;
     }
 `;
 
