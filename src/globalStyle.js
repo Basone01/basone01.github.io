@@ -21,7 +21,7 @@ injectGlobal`
         background-color:var(--black);
         font-family:'Roboto', serif;
         color:var(--white);
-        height:2000px;
+        /* height:2000px; */
         overflow:auto;
         font-size:1rem;
         overflow-x:hidden;
@@ -43,9 +43,10 @@ injectGlobal`
     a{
         text-decoration:none;
         color: inherit;
-        transition: color 0.5s;
+        transition: color 0.5s,text-shadow 0.5s;
         &:hover{
             color:white;
+            text-shadow:0 0 0.2em white;
         }
     }
     
