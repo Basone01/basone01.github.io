@@ -6,10 +6,11 @@ export const Flex = styled.div`
     flex-direction: ${props => props.dir || 'row'};
     justify-content: ${props => props.jc || 'flex-start'};
     align-items: ${props => props.ai || 'flex-start'};
+    align-content: ${props => props.ai || 'flex-start'};
     flex-grow: ${props => props.grow || '0'};
     flex-basis: ${props => props.basis || 'auto'};
     flex-wrap: ${props => (props.wrap ? 'wrap' : 'nowrap')};
-    align-self: ${props => props.alignSelf || 'auto'};
+    align-self: ${props => props.as || 'auto'};
     & > * {
         ${props => props.childGrow && 'flex-grow:1;'};
         ${props => props.childSpace && `margin:${props.childSpace};`};
