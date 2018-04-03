@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AnimatedContainer, Flex, HeadingText, ContentText } from '../shared/';
+import { AnimatedContainer, Flex, HeadingText, ContentText, Wrapper } from '../shared/';
 import styled from 'styled-components';
 
 const Image = styled.img`
@@ -7,40 +7,28 @@ const Image = styled.img`
     box-shadow: 0 0 0.25em var(--white);
 `;
 
+const Head = () => {
+    return (
+        <Flex ai="stretch" style={{ backgroundColor: 'white' }}>
+            <Flex style={{ backgroundColor: 'var(--white)' }}>
+                <Image src={require('img/profileResume.jpg')} width={144} />
+            </Flex>
+            <Flex dir="column" grow={1} style={{ backgroundColor: 'var(--black)' }}>
+                <HeadingText lg>SURACHET SANGASAENG</HeadingText>
+                <HeadingText>Computer Science</HeadingText>
+            </Flex>
+        </Flex>
+    );
+};
+
+
+
 export class Resume extends Component {
     render() {
         return (
-            <Flex justifyContent="flex-start">
-                <Flex basis="30%" alignItems="center" direction="column">
-                    <Image width="50%" src={require('img/profileResume.jpg')} />
-                    <h3>BASONE01</h3>
-                    <HeadingText>Name:</HeadingText>
-                    <ContentText indent>Surachet Sangaseang</ContentText>
-                    <HeadingText>Age:</HeadingText>
-                    <ContentText indent>21 Years</ContentText>
-                    <HeadingText>Hometown:</HeadingText>
-                    <ContentText indent>Nakhonpathom, THAILAND</ContentText>
-                </Flex>
-                <Flex basis="70%" direction="column" alignItems="stretch">
-                    <h2>SURACHET SANGASAENG</h2>
-                    <HeadingText>EDUCATION</HeadingText>
-                    <Flex fluid direction="row">
-                        <Flex basis="30%" justifyContent="center">
-                            <ContentText center>
-                                2014 - 2018
-                                <br />
-                                (expected date)
-                            </ContentText>
-                        </Flex>
-                        <Flex basis="70%" direction="column">
-                            <ContentText center>
-                                B.S. in Computer Science ( Current GPX:3.05 )
-                                <br />
-                                King Mongkut's University of Technology North Bangkok
-                            </ContentText>
-                        </Flex>
-                    </Flex>
-                </Flex>
+            <Flex dir="column" ai="stretch">
+                <Head />
+
             </Flex>
         );
     }
