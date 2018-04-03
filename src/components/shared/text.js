@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const BaseTextStyle = css`
     text-align: ${props => (props.center && 'center') || props.textAlign || 'left'};
-    text-indent: ${props => (props.indent ? '3em' : props.littleIndent?"1.5em":"0")};
+    text-indent: ${props => (props.indent ? '3em' : props.littleIndent ? '1.5em' : '0')};
     margin-top: ${props => (props.top ? props.top : '0.25em')};
     margin-bottom: ${props => (props.bottom ? props.bottom : '0.25em')};
 `;
@@ -10,7 +10,7 @@ const BaseTextStyle = css`
 const HeadingText = styled.h4`
     ${BaseTextStyle};
     letter-spacing: 1px;
-    font-size: ${props => (props.lg ? 1.3 : (props.small?0.9:1))}rem;
+    font-size: ${props => (props.lg ? 1.3 : props.small ? 0.9 : 1)}rem;
 `;
 const ContentText = styled.h5`
     ${BaseTextStyle};
@@ -26,4 +26,10 @@ const Text = styled.p`
     padding-top: 0.25em;
 `;
 
-export { HeadingText, ContentText, Text };
+const LineBreaker = styled.br`
+    display: none;
+    @media only screen and (max-width: ${props => props.maxScreen}px) {
+        display: block;
+    }
+`;
+export { HeadingText, ContentText, Text, LineBreaker };
