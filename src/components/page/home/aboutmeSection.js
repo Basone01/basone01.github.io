@@ -14,9 +14,9 @@ export default () => {
                     padding: '0 2em'
                 }}
             >
-                <Flex fluid jc="center" ai="center">
-                    <Flex fluid grow={1} dir="column" ai="stretch">
-                        <Flex fluid ai="baseline" jc="center">
+                <Flex fluid jc="center" ali="center">
+                    <Flex fluid grow={1} dir="column" ali="stretch">
+                        <Flex fluid ali="baseline" jc="center">
                             <h3 style={{ textAlign: 'right' }}>Surachet Sangasaeng</h3>
                             <span
                                 style={{
@@ -54,7 +54,7 @@ export default () => {
                     <Flex
                         fluid
                         dir="column"
-                        ai="center"
+                        ali="center"
                         style={{ transform: 'translateY(-50px)' }}
                     >
                         <ProfilePic src={require('img/profilePic.jpg')} />
@@ -66,8 +66,8 @@ export default () => {
             {/* INFO SECTION */}
 
             <Section>
-                <Flex fluid alignSelf="stretch" jc="center">
-                    <Flex vPad dir="column" ai="stretch">
+                <Flex fluid als="stretch" jc="center">
+                    <Flex vPad dir="column" ali="stretch">
                         <HeadingText center bottom="0.5em">
                             Personal Info.
                         </HeadingText>
@@ -105,7 +105,7 @@ export default () => {
                         </Text>
                     </Flex>
 
-                    <Flex vPad dir="column" ai="stretch">
+                    <Flex vPad dir="column" ali="stretch">
                         <HeadingText center bottom="0.5em">
                             Contact
                         </HeadingText>

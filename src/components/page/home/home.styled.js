@@ -69,11 +69,11 @@ const Meter = styled.div`
 `;
 
 const WorkStyle = props => (
-    <Flex fluid ai="baseline">
-        <Flex fluid basis="30%" ai="stretch" dir="column">
+    <Flex fluid ali="baseline">
+        <Flex fluid basis="30%" ali="stretch" dir="column">
             <Text textAlign="right">{props.title}</Text>
         </Flex>
-        <Flex fluid basis="70%" ai="stretch" dir="column">
+        <Flex fluid basis="70%" ali="stretch" dir="column">
             <Meter percent={props.percent} />
         </Flex>
     </Flex>

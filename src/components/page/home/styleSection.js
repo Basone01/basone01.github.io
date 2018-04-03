@@ -7,7 +7,7 @@ export default () => {
             <HeadingText lg bottom="1em" top="1em">
                 STYLE
             </HeadingText>
-            <Flex fluid ai="stretch" dir="column">
+            <Flex fluid ali="stretch" dir="column">
                 <WorkStyle title="Coding" percent={85} />
                 <WorkStyle title="Code Design" percent={70} />
                 <WorkStyle title="Project File Structure" percent={50} />

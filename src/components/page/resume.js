@@ -9,7 +9,7 @@ const Image = styled.img`
 
 const Head = () => {
     return (
-        <Flex ai="stretch" style={{ backgroundColor: 'white' }}>
+        <Flex ali="stretch" style={{ backgroundColor: 'white' }}>
             <Flex style={{ backgroundColor: 'var(--white)' }}>
                 <Image src={require('img/profileResume.jpg')} width={144} />
             </Flex>
@@ -26,7 +26,7 @@ const Head = () => {
 export class Resume extends Component {
     render() {
         return (
-            <Flex dir="column" ai="stretch">
+            <Flex dir="column" ali="stretch">
                 <Head />
 
             </Flex>
