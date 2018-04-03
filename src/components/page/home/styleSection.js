@@ -1,6 +1,49 @@
 import React from 'react';
-import { HeadingText, Flex } from 'components/shared';
-import { WorkStyle, Section } from './home.styled';
+import { Section } from './home.styled';
+import styled, { keyframes } from 'styled-components';
+import { Flex, HeadingText, Text } from 'components/shared';
+
+const MeterEffect = keyframes`
+  from{
+    right:100%;
+  }
+  to{
+    right:${props => props.percent || '0'}%;
+  }
+`;
+
+const Meter = styled.div`
+    height: 0.75em;
+    border: 2px solid var(--white);
+    margin: 0.5em 1em;
+    width: 20em;
+    background: var(--white);
+    position: relative;
+    border-radius: 4px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: ${props => 100 - props.percent || 0}%;
+        top: 0;
+        bottom: 0;
+        background-color: ${props => props.color || 'var(--black)'};
+        z-index: 1;
+        animation: ${MeterEffect} 2s;
+    }
+`;
+
+const WorkStyle = props => (
+    <Flex fluid ali="baseline">
+        <Flex fluid basis="30%" ali="stretch" dir="column">
+            <Text textAlign="right">{props.title}</Text>
+        </Flex>
+        <Flex fluid basis="70%" ali="stretch" dir="column">
+            <Meter percent={props.percent} />
+        </Flex>
+    </Flex>
+);
+
 export default () => {
     return (
         <Section>
