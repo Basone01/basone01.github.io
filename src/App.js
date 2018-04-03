@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
-import { Home, Contact, Works, Resume, Journeys } from './components/page/';
+import { Home, Works, Resume, Journeys } from './components/page/';
 import NavBar from './components/nav/';
 import './fontAwesomeInit';
 class App extends Component {
