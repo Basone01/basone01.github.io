@@ -67,7 +67,7 @@ export default () => {
 
             <Section>
                 <Flex fluid als="stretch" jc="center">
-                    <Flex vPad dir="column" ali="stretch">
+                    <Flex hPad dir="column" ali="stretch">
                         <HeadingText center bottom="0.5em">
                             Personal Info.
                         </HeadingText>
@@ -105,7 +105,7 @@ export default () => {
                         </Text>
                     </Flex>
 
-                    <Flex vPad dir="column" ali="stretch">
+                    <Flex hPad dir="column" ali="stretch">
                         <HeadingText center bottom="0.5em">
                             Contact
                         </HeadingText>
