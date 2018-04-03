@@ -4,7 +4,7 @@ import { AnimatedContainer, Flex } from '../shared/';
 export class Works extends Component {
     render() {
         return (
-            <Flex jestifyContent="center" alignItems="center">
+            <Flex jestifyContent="center" ai="center">
                 This is Works.
             </Flex>
         );

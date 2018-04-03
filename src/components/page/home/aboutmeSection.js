@@ -14,9 +14,9 @@ export default () => {
                     padding: '0 2em'
                 }}
             >
-                <Flex fluid justifyContent="center" alignItems="center">
-                    <Flex fluid grow={1} direction="column" alignItems="stretch">
-                        <Flex fluid alignItems="baseline" justifyContent="center">
+                <Flex fluid jc="center" ai="center">
+                    <Flex fluid grow={1} dir="column" ai="stretch">
+                        <Flex fluid ai="baseline" jc="center">
                             <h3 style={{ textAlign: 'right' }}>Surachet Sangasaeng</h3>
                             <span
                                 style={{
@@ -30,7 +30,7 @@ export default () => {
                             />
                             <p style={{ textAlign: 'left' }}>Computer Science</p>
                         </Flex>
-                        <Flex direction="column">
+                        <Flex dir="column">
                             <HeadingText top="0" bottom="0.25em">
                                 ABOUT ME:
                             </HeadingText>
@@ -53,8 +53,8 @@ export default () => {
 
                     <Flex
                         fluid
-                        direction="column"
-                        alignItems="center"
+                        dir="column"
+                        ai="center"
                         style={{ transform: 'translateY(-50px)' }}
                     >
                         <ProfilePic src={require('img/profilePic.jpg')} />
@@ -66,8 +66,8 @@ export default () => {
             {/* INFO SECTION */}
 
             <Section>
-                <Flex fluid alignSelf="stretch" justifyContent="center">
-                    <Flex vPad direction="column" alignItems="stretch">
+                <Flex fluid alignSelf="stretch" jc="center">
+                    <Flex vPad dir="column" ai="stretch">
                         <HeadingText center bottom="0.5em">
                             Personal Info.
                         </HeadingText>
@@ -105,7 +105,7 @@ export default () => {
                         </Text>
                     </Flex>
 
-                    <Flex vPad direction="column" alignItems="stretch">
+                    <Flex vPad dir="column" ai="stretch">
                         <HeadingText center bottom="0.5em">
                             Contact
                         </HeadingText>

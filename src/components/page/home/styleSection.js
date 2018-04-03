@@ -4,10 +4,10 @@ import { WorkStyle, Section } from './home.styled';
 export default () => {
     return (
         <Section>
-            <HeadingText large bottom="1em" top="1em">
+            <HeadingText lg bottom="1em" top="1em">
                 STYLE
             </HeadingText>
-            <Flex fluid alignItems="stretch" direction="column">
+            <Flex fluid ai="stretch" dir="column">
                 <WorkStyle title="Coding" percent={85} />
                 <WorkStyle title="Code Design" percent={70} />
                 <WorkStyle title="Project File Structure" percent={50} />

@@ -52,7 +52,7 @@ export default class SkillList extends Component {
     static Skill = Skill;
     render() {
         return (
-            <Flex fluid justifyContent="center" wrap>
+            <Flex fluid jc="center" wrap>
                 {this.props.children}
             </Flex>
         );

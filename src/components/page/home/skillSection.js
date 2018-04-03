@@ -5,7 +5,7 @@ import SkillList from "./skills"
 export default () => {
     return (
         <Section>
-            <HeadingText large bottom="1em">
+            <HeadingText lg bottom="1em">
                 SKILLs
             </HeadingText>
             <SkillList>
