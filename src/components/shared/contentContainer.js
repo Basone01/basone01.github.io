@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Flex = styled.div`
     display: flex;
-    padding: ${props => (props.fluid ? 0 : '2em')};
+    padding: ${props => (props.fluid ? 0 : (props.vPad?"0 2em":"2em"))};
     flex-direction: ${props => props.direction || 'row'};
     justify-content: ${props => props.justifyContent || 'flex-start'};
     align-items: ${props => props.alignItems || 'flex-start'};
