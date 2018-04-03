@@ -45,9 +45,6 @@ export default class NavBar extends Component {
                 <NavItem exact replace to="/resume">
                     Resume
                 </NavItem>
-                <NavItem exact replace to="/contact">
-                    Contact
-                </NavItem>
             </Bar>
         );
     }
