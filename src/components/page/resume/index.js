@@ -44,7 +44,7 @@ export class Resume extends Component {
                         <InfoSide />
                         <HobbiesSide />
                     </Flex>
-                    <Flex basis="65%" dir="column" ali="stretch">
+                    <Flex basis="60%" dir="column" ali="stretch">
                         <EducationSide />
                         <SkillSide />
                         <ExperienceSide />
