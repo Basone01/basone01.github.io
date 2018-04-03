@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import { Flex, HeadingText} from 'components/shared/';
-import { RightSideTopic } from "./resume.styled";
+import { Flex, HeadingText, LineBreaker } from 'components/shared/';
+import { RightSideTopic } from './resume.styled';
 
 const EduYear = props => {
     return (
@@ -13,7 +13,9 @@ const EduYear = props => {
 const EduPlace = props => {
     return (
         <Flex fluid grow={1} ali="stretch" dir="column">
-            <HeadingText center>{props.children}</HeadingText>
+            <HeadingText center small>
+                {props.children}
+            </HeadingText>
         </Flex>
     );
 };
@@ -35,8 +37,9 @@ const EducationSide = () => {
             <Education>
                 <EduYear>2014 - Now</EduYear>
                 <EduPlace>
-                    Currently studying at Computer Science, King Mongkut's University of Technology
-                    North Bangkok
+                    Currently studying at<LineBreaker maxScreen={1144} /> Computer Science,
+                    <LineBreaker maxScreen={1144} /> King Mongkut's University of Technology North
+                    Bangkok
                 </EduPlace>
             </Education>
             <Education>
