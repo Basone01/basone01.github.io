@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import { Flex, Text, HeadingText} from 'components/shared/';
-import { Section, ProfilePic, WorkStyle } from './home.styled';
+import { Flex, Text, HeadingText } from 'components/shared/';
+import { Section, ProfilePic } from './home.styled';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 export default () => {
@@ -31,7 +31,9 @@ export default () => {
                             <p style={{ textAlign: 'left' }}>Computer Science</p>
                         </Flex>
                         <Flex direction="column">
-                            <HeadingText top="0" bottom="0.25em">ABOUT ME:</HeadingText>
+                            <HeadingText top="0" bottom="0.25em">
+                                ABOUT ME:
+                            </HeadingText>
                             <Text indent justify>
                                 Hi, My name's Bas. I'm a Computer-Science student from KMUTNB.
                                 Programming has come to my life while I was studying Matthayom 5, It
@@ -125,7 +127,7 @@ export default () => {
                         <HeadingText small bottom="0">
                             Socials :
                         </HeadingText>
-                        <Text indent >
+                        <Text indent>
                             <a
                                 target=" _blank"
                                 rel="noopener noreferrer"
@@ -135,7 +137,7 @@ export default () => {
                                 Github : basone01
                             </a>
                         </Text>
-                        <Text indent >
+                        <Text indent>
                             <a
                                 target=" _blank"
                                 rel="noopener noreferrer"
@@ -145,7 +147,7 @@ export default () => {
                                 Facebook : basone01
                             </a>
                         </Text>
-                        <Text indent >
+                        <Text indent>
                             <a
                                 target=" _blank"
                                 rel="noopener noreferrer"
