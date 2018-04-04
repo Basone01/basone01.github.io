@@ -39,6 +39,7 @@ const ResumeWrapper = styled.div`
     
     @media screen and (max-width: 384px) {
         font-size: 10px;
+        margin: 6em auto;
     }
 `;
 
