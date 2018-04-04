@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-
+import React from 'react';
 const BaseTextStyle = css`
     text-align: ${props => (props.center && 'center') || props.textAlign || 'left'};
     text-indent: ${props => (props.indent ? '3em' : props.littleIndent ? '1.5em' : '0')};
@@ -32,4 +32,21 @@ const LineBreaker = styled.br`
         display: block;
     }
 `;
-export { HeadingText, ContentText, Text, LineBreaker };
+
+const StyledA = styled.a`
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.5s, text-shadow 0.5s;
+    &:hover {
+        color: white;
+        text-shadow: 0 0 0.2em white;
+    }
+`;
+
+const TextWithLink = props => (
+    <StyledA target=" _blank" rel="noopener noreferrer" href={props.href}>
+        {props.children}
+    </StyledA>
+);
+
+export { HeadingText, ContentText, Text, LineBreaker, TextWithLink };

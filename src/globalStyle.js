@@ -40,15 +40,6 @@ injectGlobal`
         }
     }
 
-    a{
-        text-decoration:none;
-        color: inherit;
-        transition: color 0.5s,text-shadow 0.5s;
-        &:hover{
-            color:white;
-            text-shadow:0 0 0.2em white;
-        }
-    }
     
 
 `;
