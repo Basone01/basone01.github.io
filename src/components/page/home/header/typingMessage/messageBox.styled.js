@@ -21,7 +21,7 @@ export const StyledMessageBox = styled.div`
     letter-spacing: 0.075em;
     margin-bottom: 0.5em;
     @media only screen and (max-width: 768px) {
-        font-size: 0.6rem;
+        font-size: 1.5rem;
     }
     &:after {
         content: '|';

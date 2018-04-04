@@ -3,33 +3,58 @@ import { Flex, Text, HeadingText } from 'components/shared/';
 import { Section, ProfilePic } from './home.styled';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
+const FirstSection = Section.extend`
+    transform: translateY(-72px);
+    margin-bottom: -90px;
+    padding: 0 2em;
+    @media only screen and (max-width: 640px) {
+        transform: translateY(0);
+        margin-bottom: 0;
+        padding: 0;
+    }
+`;
+
+const ProfilePicBox = Flex.extend`
+    transform: translateY(-50px);
+    @media only screen and (max-width: 640px) {
+        order: -1;
+    }
+`;
+
+const NameBox = Flex.extend`
+    & > span {
+        width: 1px;
+        height: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        align-self: center;
+        border-right: 0.1em solid var(--white);
+    }
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+        align-items: center;
+        & > span {
+            display: none;
+        }
+        & > h3,
+        p {
+            margin: 0;
+        }
+    }
+`;
+
 export default () => {
     return (
         <Fragment>
             {/* ABOUT ME SECTION */}
-            <Section
-                style={{
-                    transform: 'translateY(-72px)',
-                    marginBottom: '-90px',
-                    padding: '0 2em'
-                }}
-            >
-                <Flex fluid jc="center" ali="center">
+            <FirstSection>
+                <Flex fluid jc="center" ali="center" swapAt={640}>
                     <Flex fluid grow={1} dir="column" ali="stretch">
-                        <Flex fluid ali="baseline" jc="center">
+                        <NameBox fluid ali="baseline" jc="center">
                             <h3 style={{ textAlign: 'right' }}>Surachet Sangasaeng</h3>
-                            <span
-                                style={{
-                                    width: 1,
-                                    height: '2em',
-                                    marginLeft: '1em',
-                                    marginRight: '1em',
-                                    alignSelf: 'center',
-                                    borderRight: '0.1em solid var(--white)'
-                                }}
-                            />
+                            <span />
                             <p style={{ textAlign: 'left' }}>Computer Science</p>
-                        </Flex>
+                        </NameBox>
                         <Flex dir="column">
                             <HeadingText top="0" bottom="0.25em">
                                 ABOUT ME:
@@ -51,22 +76,17 @@ export default () => {
 
                     {/* PROFILE PIC SIDE */}
 
-                    <Flex
-                        fluid
-                        dir="column"
-                        ali="center"
-                        style={{ transform: 'translateY(-50px)' }}
-                    >
+                    <ProfilePicBox fluid dir="column" ali="center">
                         <ProfilePic src={require('img/profilePic.jpg')} />
                         <HeadingText center>THIS IS ME !!!</HeadingText>
-                    </Flex>
+                    </ProfilePicBox>
                 </Flex>
-            </Section>
+            </FirstSection>
 
             {/* INFO SECTION */}
 
             <Section>
-                <Flex fluid als="stretch" jc="center">
+                <Flex fluid als="stretch" als="center" jc="center" swapAt={640}>
                     <Flex hPad dir="column" ali="stretch">
                         <HeadingText center bottom="0.5em">
                             Personal Info.
@@ -92,7 +112,7 @@ export default () => {
                         <HeadingText small bottom="0">
                             Hobbies :
                         </HeadingText>
-                        <Text indent bottom="0.5em">
+                        <Text indent bottom="2.5em">
                             <a
                                 target=" _blank"
                                 rel="noopener noreferrer"
@@ -147,7 +167,7 @@ export default () => {
                                 Facebook : basone01
                             </a>
                         </Text>
-                        <Text indent>
+                        <Text indent bottom="2.5em">
                             <a
                                 target=" _blank"
                                 rel="noopener noreferrer"

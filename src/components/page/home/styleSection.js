@@ -31,14 +31,23 @@ const Meter = styled.div`
         z-index: 1;
         animation: ${MeterEffect} 2s;
     }
+    @media screen and (max-width:640px){
+        width:15em;
+    }
+    @media screen and (max-width:480px){
+        width:12em;
+    }
+    @media screen and (max-width:384px){
+        width:10em;
+    }
 `;
 
 const WorkStyle = props => (
-    <Flex fluid ali="baseline">
-        <Flex fluid basis="30%" ali="stretch" dir="column">
+    <Flex fluid ali="center" style={{paddingLeft:"1em"}}>
+        <Flex fluid basis="40%" ali="stretch" dir="column">
             <Text textAlign="right">{props.title}</Text>
         </Flex>
-        <Flex fluid basis="70%" ali="stretch" dir="column">
+        <Flex fluid grow={1} ali="stretch" dir="column">
             <Meter percent={props.percent} />
         </Flex>
     </Flex>
@@ -50,7 +59,7 @@ export default () => {
             <HeadingText lg bottom="1em" top="1em">
                 STYLE
             </HeadingText>
-            <Flex fluid ali="stretch" dir="column">
+            <Flex fluid ali="stretch" dir="column" >
                 <WorkStyle title="Coding" percent={85} />
                 <WorkStyle title="Code Design" percent={70} />
                 <WorkStyle title="Project File Structure" percent={50} />
