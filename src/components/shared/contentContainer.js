@@ -2,19 +2,22 @@ import styled from 'styled-components';
 
 export const Flex = styled.div`
     display: flex;
-    padding: ${props => (props.fluid ? 0 : (props.hPad?"0 2em":props.vPad?"2em 0":"2em"))};
+    padding: ${props => (props.fluid ? 0 : props.hPad ? '0 2em' : props.vPad ? '2em 0' : '2em')};
     flex-direction: ${props => props.dir || 'row'};
     justify-content: ${props => props.jc || 'flex-start'};
     align-items: ${props => props.ali || 'flex-start'};
     align-content: ${props => props.alc || 'flex-start'};
     flex-grow: ${props => props.grow || '0'};
-    flex-shrink: ${props => props.shrink ||props.noShrink?"0":'1'};
+    flex-shrink: ${props => (props.shrink || props.noShrink ? '0' : '1')};
     flex-basis: ${props => props.basis || 'auto'};
     flex-wrap: ${props => (props.wrap ? 'wrap' : 'nowrap')};
     align-self: ${props => props.als || 'auto'};
     & > * {
         ${props => props.childGrow && 'flex-grow:1;'};
         ${props => props.childSpace && `margin:${props.childSpace};`};
+    }
+    @media screen and (max-width: ${props => props.swapAt}px) {
+        ${props => props.swapAt && `flex-direction: ${props.dir === 'column' ? 'row' : 'column'};`};
     }
 `;
 
