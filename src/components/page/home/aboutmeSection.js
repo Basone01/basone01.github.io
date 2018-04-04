@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Flex, Text, HeadingText } from 'components/shared/';
+import { Flex, Text, HeadingText, TextWithLink } from 'components/shared/';
 import { Section, ProfilePic } from './home.styled';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
@@ -113,13 +113,9 @@ export default () => {
                             Hobbies :
                         </HeadingText>
                         <Text indent bottom="2.5em">
-                            <a
-                                target=" _blank"
-                                rel="noopener noreferrer"
-                                href="http://www.instagram.com/basone01"
-                            >
+                            <TextWithLink href="http://www.instagram.com/basone01">
                                 <FontAwesomeIcon fixedWidth icon="camera-retro" size="2x" />
-                            </a>
+                            </TextWithLink>
                             <FontAwesomeIcon fixedWidth icon="headphones" size="2x" />{' '}
                             <FontAwesomeIcon fixedWidth icon="gamepad" size="2x" />
                         </Text>
@@ -133,10 +129,10 @@ export default () => {
                             Email :
                         </HeadingText>
                         <Text indent bottom="0.5em">
-                            <a href="mailto:basone01@hotmail.com">
+                            <TextWithLink href="mailto:basone01@hotmail.com">
                                 <FontAwesomeIcon fixedWidth icon="envelope" size="lg" />{' '}
                                 basone01@hotmail.com
-                            </a>
+                            </TextWithLink>
                         </Text>
                         <HeadingText small bottom="0">
                             Telephone :
@@ -148,34 +144,22 @@ export default () => {
                             Socials :
                         </HeadingText>
                         <Text indent>
-                            <a
-                                target=" _blank"
-                                rel="noopener noreferrer"
-                                href="http://github.com/basone01"
-                            >
+                            <TextWithLink href="http://github.com/basone01">
                                 <FontAwesomeIcon fixedWidth icon={['fab', 'github']} size="lg" />{' '}
                                 Github : basone01
-                            </a>
+                            </TextWithLink>
                         </Text>
                         <Text indent>
-                            <a
-                                target=" _blank"
-                                rel="noopener noreferrer"
-                                href="http://fb.com/basone01"
-                            >
+                            <TextWithLink href="http://fb.com/basone01">
                                 <FontAwesomeIcon fixedWidth icon={['fab', 'facebook']} size="lg" />{' '}
                                 Facebook : basone01
-                            </a>
+                            </TextWithLink>
                         </Text>
                         <Text indent bottom="2.5em">
-                            <a
-                                target=" _blank"
-                                rel="noopener noreferrer"
-                                href="http://line.me/ti/p/~basone01"
-                            >
+                            <TextWithLink href="http://line.me/ti/p/~basone01">
                                 <FontAwesomeIcon fixedWidth icon={['fab', 'line']} size="lg" /> Line
                                 : basone01
-                            </a>
+                            </TextWithLink>
                         </Text>
                     </Flex>
                 </Flex>
