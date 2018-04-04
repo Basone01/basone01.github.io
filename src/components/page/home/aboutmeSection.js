@@ -86,7 +86,7 @@ export default () => {
             {/* INFO SECTION */}
 
             <Section>
-                <Flex fluid als="stretch" als="center" jc="center" swapAt={640}>
+                <Flex fluid als="center" jc="center" swapAt={640}>
                     <Flex hPad dir="column" ali="stretch">
                         <HeadingText center bottom="0.5em">
                             Personal Info.
