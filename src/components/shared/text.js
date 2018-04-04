@@ -10,7 +10,7 @@ const BaseTextStyle = css`
 const HeadingText = styled.h4`
     ${BaseTextStyle};
     letter-spacing: 1px;
-    font-size: ${props => (props.lg ? 1.3 : props.small ? 0.9 : 1)}rem;
+    font-size: ${props => (props.lg ? 1.3 : props.small ? 0.9 : 1)}em;
 `;
 const ContentText = styled.h5`
     ${BaseTextStyle};
@@ -20,7 +20,7 @@ const ContentText = styled.h5`
 const Text = styled.p`
     ${BaseTextStyle};
     letter-spacing: 0.03em;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     font-weight: 400;
     line-height: 1.2em;
     padding-top: 0.25em;
