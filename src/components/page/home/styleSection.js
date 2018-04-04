@@ -24,7 +24,7 @@ const Meter = styled.div`
         content: '';
         position: absolute;
         left: 0;
-        right: ${props => 100 - props.percent || 0};
+        right: ${props => 100 - props.percent || 0}%;
         top: 0;
         bottom: 0;
         background-color: ${props => props.color || 'var(--black)'};
