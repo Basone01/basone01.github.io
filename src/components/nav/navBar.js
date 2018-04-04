@@ -36,13 +36,7 @@ export default class NavBar extends Component {
                 <NavItem exact replace to="/">
                     Home
                 </NavItem>
-                <NavItem exact replace to="/journeys">
-                    MyJourneys
-                </NavItem>
-                <NavItem exact replace to="/works">
-                    MyWorks
-                </NavItem>
-                <NavItem exact replace to="/resume">
+                <NavItem replace to="/resume">
                     Resume
                 </NavItem>
             </Bar>
