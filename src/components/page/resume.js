@@ -1,10 +1,25 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import {AnimatedContainer, Flex, HeadingText, Separator} from 'components/shared/';
-import {Image} from './resume.styled';
 
 const ResumeBox = styled.div `
     margin:72px;
+    @media screen and (max-width:1024px){
+        margin:36px;
+    }
+    @media screen and (max-width:600px){
+        margin:12px 0;
+    }
+`;
+
+const Image = styled.img `
+    border-radius: 50%;
+    box-shadow: 0 0 0.25em var(--white);
+    border: 3px solid var(--white);
+    margin-bottom:15px;
+    @media screen and (max-width: 384px) {
+        width:100px;
+    }
 `;
 
 const Topic = styled.h2 `
@@ -43,8 +58,8 @@ const ALink = styled.a `
 
 const ResumeHead = () => {
     return (
-        <Flex hPad ali="stretch" jc="space-between">
-            <Flex fluid jc="flex-start">
+        <Flex hPad ali="stretch" jc="space-between" swapAt={1024}>
+            <Flex fluid jc="flex-start" swapAt={800}>
                 <Flex fluid als="center">
                     <Image src={require('img/profileResume.jpg')} width={144}/>
                 </Flex>

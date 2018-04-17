@@ -1,4 +1,4 @@
 import Home from './home/';
-import Resume from './resume/';
+import Resume from './resume';
 
 export { Home, Resume };

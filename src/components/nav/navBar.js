@@ -38,7 +38,7 @@ export default class NavBar extends Component {
                     isShow={this.state.isShow}
                     onClick={() => this.setState({ isShow: !isShow })}
                 >
-                    <FontAwesomeIcon size="md" icon="chevron-circle-left" />
+                    <FontAwesomeIcon size="1x" icon="chevron-circle-left" />
                 </NavHead>
                 {isShow && (
                     <div>
