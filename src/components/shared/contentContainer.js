@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Flex = styled.div`
     display: flex;
     padding: ${props => (props.fluid ? 0 : props.hPad ? '0 2em' : props.vPad ? '2em 0' : '2em')};
-    flex-direction: ${props => props.dir || 'row'};
+    flex-direction: ${props => props.fd || 'row'};
     justify-content: ${props => props.jc || 'flex-start'};
     align-items: ${props => props.ali || 'flex-start'};
     align-content: ${props => props.alc || 'flex-start'};
@@ -17,7 +17,7 @@ export const Flex = styled.div`
         ${props => props.childSpace && `margin:${props.childSpace};`};
     }
     @media screen and (max-width: ${props => props.swapAt}px) {
-        ${props => props.swapAt && `flex-direction: ${props.dir === 'column' ? 'row' : 'column'};`};
+        ${props => props.swapAt && `flex-direction: ${props.fd === 'column' ? 'row' : 'column'};`};
     }
 `;
 

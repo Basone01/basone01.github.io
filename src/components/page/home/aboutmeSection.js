@@ -49,13 +49,13 @@ export default () => {
             {/* ABOUT ME SECTION */}
             <FirstSection>
                 <Flex fluid jc="center" ali="center" swapAt={640}>
-                    <Flex fluid grow={1} dir="column" ali="stretch">
+                    <Flex fluid grow={1} fd="column" ali="stretch">
                         <NameBox fluid ali="baseline" jc="center">
                             <h3 style={{ textAlign: 'right' }}>Surachet Sangasaeng</h3>
                             <span />
                             <p style={{ textAlign: 'left' }}>Computer Science</p>
                         </NameBox>
-                        <Flex dir="column">
+                        <Flex fd="column">
                             <HeadingText top="0" bottom="0.25em">
                                 ABOUT ME:
                             </HeadingText>
@@ -76,7 +76,7 @@ export default () => {
 
                     {/* PROFILE PIC SIDE */}
 
-                    <ProfilePicBox fluid dir="column" ali="center">
+                    <ProfilePicBox fluid fd="column" ali="center">
                         <ProfilePic src={require('img/profilePic.jpg')} />
                         <HeadingText center>THIS IS ME !!!</HeadingText>
                     </ProfilePicBox>
@@ -87,7 +87,7 @@ export default () => {
 
             <Section>
                 <Flex fluid als="center" jc="center" swapAt={640}>
-                    <Flex hPad dir="column" ali="stretch">
+                    <Flex hPad fd="column" ali="stretch">
                         <HeadingText center bottom="0.5em">
                             Personal Info.
                         </HeadingText>
@@ -121,7 +121,7 @@ export default () => {
                         </Text>
                     </Flex>
 
-                    <Flex hPad dir="column" ali="stretch">
+                    <Flex hPad fd="column" ali="stretch">
                         <HeadingText center bottom="0.5em">
                             Contact
                         </HeadingText>

@@ -9,7 +9,6 @@ import {
 import Header from './header/';
 import AboutMeSection from './aboutmeSection';
 import QuoteSection from './quoteSection';
-import StyleSection from './styleSection';
 import SkillSection from './skillSection';
 const Home = props => {
     return (
@@ -20,12 +19,10 @@ const Home = props => {
                 <Separator space="1em" />
                 <QuoteSection />
                 <Separator space="1em" />
-                <StyleSection />
-                <Separator space="2em" />
                 <SkillSection />
                 <Separator space="2em" />
                 <HeadingText lg>Thanks for visiting.</HeadingText>
-                <HeadingText lg bottom="3em">
+                <HeadingText center bottom="3em">
                     Source code of this site are on my github{' '}
                     <TextWithLink href="https://github.com/basone01/basone01profile/">
                         here
